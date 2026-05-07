@@ -4,3 +4,4 @@ numpy==1.26.4
 opencv-python-headless==4.9.0.80
 scikit-image==0.23.2
 scipy==1.13.1
+flask-cors
