@@ -3,10 +3,12 @@ import base64
 import cv2
 import numpy as np
 from flask import Flask, render_template, request
+from flask_cors import CORS
 from scipy.spatial import ConvexHull, QhullError
 from skimage.morphology import skeletonize
 
 app = Flask(__name__)
+CORS(app)
 app.config["MAX_CONTENT_LENGTH"] = 10 * 1024 * 1024
 
 DEFAULT_SCALE_FACTOR = 0.066  # mm per pixel
